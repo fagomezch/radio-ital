@@ -1,0 +1,13 @@
+.svg-icon {
+  height: rem(32);
+  width: rem(32);
+
+  path,
+  polygon,
+  rect { fill: $white; }
+
+  circle {
+    stroke: $white;
+    stroke-width: 1;
+  }
+}

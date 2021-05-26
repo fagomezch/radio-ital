@@ -1,12 +1,3 @@
-// Mixins
-
-// Sass function to convert px to REM
-$base-size: 16;
-
-@function rem($target, $context: $base-size) {
-  @return ($target / $context) * 1rem;
-}
-
 @mixin tablet {
   @media all and (min-width: #{$tablet}) {
     @content;

@@ -1,0 +1,22 @@
+body,
+html {
+  font-family: $font-secondary;
+  font-size: $font-size;
+  font-weight: 300;
+  line-height: normal;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: $contrast;
+  color: $contrast-light;
+  margin: 0;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+
+  &.overflow-hidden { overflow: hidden; }
+}

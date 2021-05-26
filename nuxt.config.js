@@ -52,5 +52,8 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+    extend (config, { loaders }) {
+      loaders.scss.additionalData = '@use "sass:math";'
+    }
   }
 }

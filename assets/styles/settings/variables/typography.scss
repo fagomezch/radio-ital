@@ -1,22 +1,6 @@
-// Typography
-
 // Teko Font
 $font-primary: 'Teko', sans-serif;
 $font-secondary: 'Work Sans', sans-serif;
 
 // Font size
 $font-size: rem(16);
-
-// Font Extender
-%base-style {
-  font-family: $font-secondary;
-  font-size: $font-size;
-  font-weight: 300;
-  line-height: rem(24);
-}
-
-%heading-style {
-  font-family: $font-primary;
-  font-weight: 500;
-  line-height: 1.1;
-}

@@ -1,0 +1,23 @@
+.align-center { align-items: center; }
+
+.container {
+  margin: auto;
+  padding: 0 rem(15);
+  position: relative;
+}
+
+.flex { display: flex; }
+
+.justify-space-between { justify-content: space-between; }
+
+@include tablet {
+  .container { max-width: rem(750); }
+}
+
+@include laptop {
+  .container { max-width: rem(970); }
+}
+
+@include desktop {
+  .container { max-width: rem(1200); }
+}

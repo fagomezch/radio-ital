@@ -1,0 +1,64 @@
+button {
+  font-family: $font-primary;
+}
+
+.btn {
+  border: 0 solid transparent;
+  display: inline-block;
+  font-size: rem(14);
+  font-weight: 700;
+  line-height: 1.6;
+  min-width: rem(130);
+  overflow: hidden;
+  padding: rem(8) rem(30) rem(8);
+  position: relative;
+  text-align: center;
+
+  &:after {
+    background: rgba(0,0,0,.25);
+    bottom: 0;
+    content: "";
+    display: block;
+    height: rem(4);
+    left: 0;
+    position: absolute;
+    right: 0;
+    width: 100%;
+    z-index: 3;
+  }
+
+  &--hover {
+    box-shadow: 0 0 0 2em rgb(109 253 255 / 0%);
+    display: inline-block;
+    margin-bottom: rem(25);
+    position: relative;
+    transition: .05s;
+
+    &::after {
+      bottom: 0;
+      content: "";
+      display: block;
+      height: rem(4);
+      left: 0;
+      position: absolute;
+      right: 0;
+      width: 100%;
+      z-index: 3;
+    }
+  }
+
+  &--primary {
+    background-color: $primary;
+    color: $text;
+
+    &:focus,
+    &:hover {
+      animation: btnPulseYellow 1s;
+      box-shadow: 0 0 0 2em rgb(109 253 255 / 0%);
+    }
+  }
+}
+
+@keyframes btnPulseYellow {
+  0% { box-shadow:0 0 0 0 $primary; }
+}

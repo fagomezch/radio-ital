@@ -1,1 +1,15 @@
+@import './generic/reset';
+
 @import './settings/fonts';
+
+@import './generic/base';
+
+@import './components/buttons';
+
+@import './elements/headings';
+@import './elements/icons';
+@import './elements/links';
+@import './elements/lists';
+
+@import './objects/animations';
+@import './objects/layout';
