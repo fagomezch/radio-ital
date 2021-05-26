@@ -1,0 +1,16 @@
+// Breakpoints
+
+/* Tablet 768px */
+$tablet:  48rem; // 768px
+
+/* Laptop 992px */
+$laptop: 62rem; // 992px
+
+/* Desktop 1200px */
+$desktop: 75rem; // 1200px
+
+:export {
+  tablet: ($tablet * 16, 1rem);
+  laptop: ($laptop * 16, 1rem);
+  desktop: ($desktop * 16, 1rem);
+}

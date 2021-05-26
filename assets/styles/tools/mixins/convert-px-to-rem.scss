@@ -1,0 +1,32 @@
+// Mixins
+
+// Sass function to convert px to REM
+$base-size: 16;
+
+@function rem($target, $context: $base-size) {
+  @return math.div($target, $context) * 1rem;
+}
+
+@mixin tablet {
+  @media all and (min-width: #{$tablet}) {
+    @content;
+  }
+}
+
+@mixin tablet-landscape {
+  @media all and (min-width: #{$tablet-landscape}) {
+    @content;
+  }
+}
+
+@mixin laptop {
+  @media all and (min-width: #{$laptop}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media all and (min-width: #{$desktop}) {
+    @content;
+  }
+}
