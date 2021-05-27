@@ -40,8 +40,19 @@ export default {
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     // https://go.nuxtjs.dev/pwa
-    '@nuxtjs/pwa'
+    '@nuxtjs/pwa',
+    'nuxt-i18n'
   ],
+
+  i18n: {
+    locale: 'en',
+    fallbackLocale: 'es',
+    localeDir: 'locales',
+    enableLegacy: false,
+    runtimeOnly: false,
+    compositionOnly: false,
+    fullInstall: true
+  },
 
   // PWA module configuration: https://go.nuxtjs.dev/pwa
   pwa: {

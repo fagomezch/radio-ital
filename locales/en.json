@@ -1,0 +1,19 @@
+{
+  "homeNews": {
+    "read-more": "Read more",
+    "subtitle": "Editorial" ,
+    "title": "Latest news"
+  },
+  "nav": {
+    "blog": "Blog",
+    "home": "Home",
+    "ital-recipes": "Ital recipes",
+    "news": "News",
+    "request-a-song": "Request a song"
+  },
+  "uvp": {
+    "first": "Think Ital",
+    "second": "Live Ital",
+    "third": "Listen Ital"
+  }
+}
