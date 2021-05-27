@@ -9,6 +9,15 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+    ],
+    script: [
+      {
+        src: 'https://www.googletagmanager.com/gtag/js?id=G-SWB91XC8YB',
+        async: true
+      },
+      {
+        src: '/ga.js'
+      }
     ]
   },
 
