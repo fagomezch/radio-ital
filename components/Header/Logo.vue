@@ -1,8 +1,8 @@
 <template>
-  <NLink class="logo" to="/">
+  <nuxt-link class="logo" :to="localePath('index')">
     <img class="logo__image" alt="Radio Ital Logo" src="@/assets/images/logo.png">
     <img class="logo__image--small" alt="Radio Ital Logo" src="@/assets/images/logo-small.png">
-  </NLink>
+  </nuxt-link>
 </template>
 
 <style lang="scss" scoped>

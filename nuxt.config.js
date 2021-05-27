@@ -53,18 +53,18 @@ export default {
       locales: [
         {
           code: 'en',
-          name: 'en',
-          iso: 'en-US'
+          iso: 'en-US',
+          name: 'en'
         },
         {
           code: 'es',
-          name: 'es',
-          iso: 'es-ES'
+          iso: 'es-ES',
+          name: 'es'
         },
         {
           code: 'pt',
-          name: 'pt',
-          iso: 'pt-BR'
+          iso: 'pt-BR',
+          name: 'pt'
         }
       ],
       defaultLocale: 'en',
