@@ -1,0 +1,44 @@
+<template>
+  <NLink class="logo" to="/">
+    <img class="logo__image" alt="Radio Ital Logo" src="@/assets/images/logo.png">
+    <img class="logo__image--small" alt="Radio Ital Logo" src="@/assets/images/logo-small.png">
+  </NLink>
+</template>
+
+<style lang="scss" scoped>
+.logo {
+  position: relative;
+  z-index: 1;
+
+  &:after {
+    background-image: url('@/assets/images/on-air.gif');
+    background-size: contain;
+    bottom: 80%;
+    content: '';
+    height: rem(16);
+    left: 104%;
+    position: absolute;
+    width: rem(64);
+  }
+
+  .logo__image--small { display: none; }
+}
+
+@include desktop {
+  .logo {
+    .logo__image {
+      opacity: 1;
+      transition: opacity 0.3s ease-in-out;
+    }
+
+    &:hover {
+      &:after,
+      .logo__image,
+      .logo__image--small {
+        opacity: 0.7;
+        transition: opacity 0.3s ease-in-out;
+      }
+    }
+  }
+}
+</style>

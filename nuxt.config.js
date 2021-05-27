@@ -41,18 +41,49 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/pwa
     '@nuxtjs/pwa',
-    'nuxt-i18n'
+    // i18n.nuxtjs.org
+    ['nuxt-i18n', {
+      detectBrowserLanguage: {
+        alwaysRedirect: true,
+        cookieKey: 'i18n_redirected',
+        onlyOnRoot: true,
+        skipSettingLocaleOnNavigate: true,
+        useCookie: true
+      },
+      locales: [
+        {
+          code: 'en',
+          name: 'en',
+          iso: 'en-US'
+        },
+        {
+          code: 'es',
+          name: 'es',
+          iso: 'es-ES'
+        },
+        {
+          code: 'pt',
+          name: 'pt',
+          iso: 'pt-BR'
+        }
+      ],
+      defaultLocale: 'en',
+      vueI18n: {
+        fallbackLocale: 'en',
+        messages: {
+          en: {
+            welcome: 'Welcome'
+          },
+          pt: {
+            welcome: 'Bienvenue'
+          },
+          es: {
+            welcome: 'Bienvenido'
+          }
+        }
+      }
+    }]
   ],
-
-  i18n: {
-    locale: 'en',
-    fallbackLocale: 'es',
-    localeDir: 'locales',
-    enableLegacy: false,
-    runtimeOnly: false,
-    compositionOnly: false,
-    fullInstall: true
-  },
 
   // PWA module configuration: https://go.nuxtjs.dev/pwa
   pwa: {
