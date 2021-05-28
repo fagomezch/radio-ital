@@ -1,11 +1,11 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'radio-ital',
+    title: 'Radio Ital — Listen to free reggae music radio online 24/7',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' }
+      { hid: 'description', name: 'description', content: 'Select your songs from Dub, Ska and Roots Reggae. Breaking news headlines about Reggae music. Enjoy making your own Jamaican Ital food at home.' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
