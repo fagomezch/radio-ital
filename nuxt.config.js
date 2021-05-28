@@ -84,13 +84,25 @@ export default {
         fallbackLocale: 'en',
         messages: {
           en: {
-            welcome: 'Welcome'
-          },
-          pt: {
-            welcome: 'Bienvenue'
+            uvp: {
+              first: 'Think Ital',
+              second: 'Live Ital',
+              third: 'Listen Ital'
+            }
           },
           es: {
-            welcome: 'Bienvenido'
+            uvp: {
+              first: 'Piensas Ital',
+              second: 'Vives Ital',
+              third: 'Escuchas Ital'
+            }
+          },
+          pt: {
+            uvp: {
+              first: 'Pense Ital',
+              second: 'Vives Ital',
+              third: 'Ouça Ital'
+            }
           }
         }
       }

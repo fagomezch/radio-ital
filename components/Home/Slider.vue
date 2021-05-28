@@ -8,7 +8,6 @@
 
 <script>
 export default {
-  name: 'HomeSlider',
   data () {
     return {
       sliderImages: this.$store.state.homeSlider,

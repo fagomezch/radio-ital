@@ -9,5 +9,10 @@ export const state = () => ({
     {
       img: 'https://raw.githubusercontent.com/fagomezch/api/main/radio-ital/images/home-slider/slide3.jpg'
     }
-  ]
+  ],
+  uvp: {
+    first: 'uvp.first',
+    second: 'uvp.second',
+    third: 'uvp.third'
+  }
 })
