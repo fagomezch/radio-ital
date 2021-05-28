@@ -1,5 +1,5 @@
 <template>
-  <header>
+  <header class="header">
     <div class="container flex align-center justify-space-between">
       <Logo />
       <LanguageSelector />
@@ -23,6 +23,11 @@ export default {
   .container {
     min-height: rem(85);
     max-width: 100%;
+  }
+
+  .header {
+    position: absolute;
+    width: 100%;
   }
 
   @include desktop {

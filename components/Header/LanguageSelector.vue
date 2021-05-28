@@ -30,16 +30,15 @@ export default ({
     justify-content: center;
     line-height: rem(28);
     padding: rem(40);
+    position: relative;
+    z-index: 1;
 
     &__item {
       align-items: center;
-      background: transparent;
-      border-radius: 50%;
       display: flex;
-      height: 40px;
       justify-content: center;
+      margin: 0 rem(10);
       text-decoration: none;
-      width: 40px;
       vertical-align: middle;
     }
   }
