@@ -5,7 +5,12 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Select your songs from Dub, Ska and Roots Reggae. Breaking news headlines about Reggae music. Enjoy making your own Jamaican Ital food at home.' }
+      { hid: 'description', name: 'description', content: 'Select your songs from Dub, Ska and Roots Reggae. Breaking news headlines about Reggae music. Enjoy making your own Jamaican Ital food at home.' },
+      { hid: 'og:title', name: 'og:title', content: 'Radio Ital — Listen to free reggae music radio online 24/7' },
+      { hid: 'og:site_name', name: 'og:site_name', content: 'Radio Ital — Listen to free reggae music radio online 24/7' },
+      { hid: 'apple-mobile-web-app-title', name: 'apple-mobile-web-app-title', content: 'Radio Ital — Listen to free reggae music radio online 24/7' },
+      { hid: 'og:description', name: 'og:description', content: 'Select your songs from Dub, Ska and Roots Reggae. Breaking news headlines about Reggae music. Enjoy making your own Jamaican Ital food at home.' },
+      { hid: 'og:image', name: 'og:image', content: 'https://raw.githubusercontent.com/fagomezch/api/main/radio-ital/images/banners/banner-radio-ital.jpg' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
