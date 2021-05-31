@@ -4,7 +4,7 @@
       v-for="locale in availableLocales"
       :key="locale.code"
       :to="switchLocalePath(locale.code)"
-      class="language-selector__item"
+      class="language-selector__lang"
     >
       {{ locale.name }}
     </nuxt-link>
@@ -33,7 +33,7 @@ export default ({
     position: relative;
     z-index: 1;
 
-    &__item {
+    &__lang {
       align-items: center;
       display: flex;
       justify-content: center;
@@ -47,14 +47,12 @@ export default ({
     .language-selector {
       padding: 0 0 0 rem(30);
 
-      &__item {
+      &__lang {
         color: $white;
         cursor: pointer;
         font-size: rem(18);
-        height: rem(22);
         opacity: 1;
         transition: all 0.3s ease-in-out;
-        width: rem(22);
 
         &:hover {
           color: $primary;

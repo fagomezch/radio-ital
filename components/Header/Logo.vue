@@ -21,16 +21,11 @@
     width: rem(64);
   }
 
-  .logo__image--small { display: none; }
+  &__image--small { display: none; }
 }
 
 @include desktop {
   .logo {
-    .logo__image {
-      opacity: 1;
-      transition: opacity 0.3s ease-in-out;
-    }
-
     &:hover {
       &:after,
       .logo__image,
@@ -38,6 +33,11 @@
         opacity: 0.7;
         transition: opacity 0.3s ease-in-out;
       }
+    }
+
+    &__image {
+      opacity: 1;
+      transition: opacity 0.3s ease-in-out;
     }
   }
 }

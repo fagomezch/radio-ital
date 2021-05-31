@@ -49,8 +49,8 @@ export default {
   styleResources: {
     // your settings here
     scss: [
-      '@/assets/styles/settings/variables/*.scss',
-      '@/assets/styles/tools/mixins/*.scss'
+      '@/assets/styles/tools/mixins/*.scss',
+      '@/assets/styles/settings/variables/*.scss'
     ]
   },
 
@@ -71,17 +71,17 @@ export default {
         {
           code: 'en',
           iso: 'en-US',
-          name: 'en'
+          name: 'English'
         },
         {
           code: 'es',
           iso: 'es-ES',
-          name: 'es'
+          name: 'Español'
         },
         {
           code: 'pt',
           iso: 'pt-BR',
-          name: 'pt'
+          name: 'Português'
         }
       ],
       defaultLocale: 'en',
@@ -105,7 +105,7 @@ export default {
           pt: {
             uvp: {
               first: 'Pense Ital',
-              second: 'Vives Ital',
+              second: 'Viva Ital',
               third: 'Ouça Ital'
             }
           }
@@ -125,6 +125,10 @@ export default {
   build: {
     extend (config, { loaders }) {
       loaders.scss.additionalData = '@use "sass:math";'
-    }
+    },
+    publicPath: '/assets/'
+  },
+  globals: {
+    id: '__radioItal'
   }
 }

@@ -1,9 +1,9 @@
 <template>
-  <div class="home__uvp">
+  <div class="uvp">
     <h1>
-      <span class="home__uvp-first home__uvp-span">{{ $t(uvpFirst) }}</span>
-      <span class="home__uvp-second home__uvp-span">{{ $t(uvpSecond) }}</span>
-      <span class="home__uvp-third home__uvp-span">{{ $t(uvpThird) }}</span>
+      <span class="uvp__first">{{ $t(uvpFirst) }}</span>
+      <span class="uvp__second">{{ $t(uvpSecond) }}</span>
+      <span class="uvp__third">{{ $t(uvpThird) }}</span>
     </h1>
   </div>
 </template>
@@ -21,7 +21,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.home__uvp {
+.uvp {
   color: $primary;
   left: 50%;
   position: absolute;
@@ -32,28 +32,30 @@ export default {
   width: 100%;
   z-index: 1;
 
-  &-first { font-size: rem(36); }
+  &__first { font-size: rem(36); }
 
-  &-second {
+  &__second {
     color: $secondary;
     font-size: rem(60);
     margin-top: rem(10);
   }
 
-  &-span { display: block; }
-
-  &-third {
+  &__third {
     color: $white;
     font-size: rem(48);
   }
+
+  &__first,
+  &__second,
+  &__third { display: block; }
 }
 
 @include desktop {
-  .home__uvp {
+  .uvp {
     width: auto;
 
-    &-second { font-size: rem(120); }
-    &-third {
+    &__second { font-size: rem(120); }
+    &__third {
       font-size: rem(80);
       transform: translate(0, -35px);
     }

@@ -1,5 +1,5 @@
 <template>
-  <header class="header">
+  <header>
     <div class="container flex align-center justify-space-between">
       <Logo />
       <LanguageSelector />
@@ -25,7 +25,7 @@ export default {
     max-width: 100%;
   }
 
-  .header {
+  header {
     position: absolute;
     width: 100%;
   }

@@ -1,8 +1,8 @@
 <template>
-  <div class="home__slider">
-    <section v-for="(slide, index) in sliderImages" :key="index" class="home__slides fade">
-      <img class="home__slider-image" :src="slide.img">
-    </section>
+  <div class="slider">
+    <div v-for="(slide, index) in sliderImages" :key="index" class="slider__item fade">
+      <img class="slider__image" :src="slide.img">
+    </div>
   </div>
 </template>
 
@@ -28,7 +28,7 @@ export default {
 
     showSlides (n) {
       let i
-      const slides = document.getElementsByClassName('home__slides')
+      const slides = document.getElementsByClassName('slider__item')
 
       if (n > slides.length) { this.slideIndex = 1 }
       if (n < 1) { this.slideIndex = slides.length }
@@ -46,9 +46,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.home__slides {display: none}
+.slider__item {display: none}
 
-.home__slider {
+.slider {
   height: 100vh;
   margin: auto;
   max-width: 100%;
@@ -66,7 +66,7 @@ export default {
     width: 100%;
   }
 
-  &-image {
+  &__image {
     animation: zoom 35s;
     height: 100vh;
     object-fit: cover;

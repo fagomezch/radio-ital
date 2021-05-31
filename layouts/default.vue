@@ -1,21 +1,19 @@
 <template>
-  <div class="radio-ital">
+  <div class="__default">
     <Header />
     <Slider />
-    <Uvp />
+    <Nuxt />
   </div>
 </template>
 
 <script>
 import Header from '@/components/Header/Header.vue'
 import Slider from '@/components/Home/Slider.vue'
-import Uvp from '@/components/Home/Uvp.vue'
 
 export default {
   components: {
     Header,
-    Slider,
-    Uvp
+    Slider
   }
 }
 </script>
