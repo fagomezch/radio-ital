@@ -1,7 +1,7 @@
 <template>
   <nuxt-link class="logo" :to="localePath('index')">
-    <img class="logo__image" alt="Radio Ital Logo" src="@/assets/images/logo.png">
-    <img class="logo__image--small" alt="Radio Ital Logo" src="@/assets/images/logo-small.png">
+    <img height="62" width="170" class="logo__image" alt="Radio Ital Logo" src="@/assets/images/logo.png">
+    <img height="41" width="184" class="logo__image--small" alt="Radio Ital Logo" src="@/assets/images/logo-small.png">
   </nuxt-link>
 </template>
 

@@ -1,7 +1,12 @@
 <template>
   <div class="slider">
-    <div v-for="(slide, index) in sliderImages" :key="index" class="slider__item fade">
-      <img class="slider__image" :src="slide.img">
+    <div
+      v-for="(slide, index) in sliderImages"
+      :key="index"
+      class="slider__item fade"
+    >
+      <img :alt="$t(slide.alt)" class="slider__image" :src="slide.img">
+      <img :alt="$t(slide.alt)" class="slider__image slider__image--xs" :src="slide.imgXs">
     </div>
   </div>
 </template>
@@ -68,9 +73,12 @@ export default {
 
   &__image {
     animation: zoom 35s;
+    display: none;
     height: 100vh;
     object-fit: cover;
     width: 100%;
+
+    &--xs { display: block; }
   }
 }
 
@@ -87,5 +95,15 @@ export default {
 @keyframes zoom {
   from { transform: scale(1.1, 1.1) }
   to { transform: scale(1.8, 1.8) }
+}
+
+@include desktop {
+  .slider {
+    &__image {
+      display: block;
+
+      &--xs { display: none; }
+    }
+  }
 }
 </style>

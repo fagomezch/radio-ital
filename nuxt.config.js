@@ -21,10 +21,12 @@ export default {
         async: true
       },
       {
-        src: '/ga.js'
+        src: '/ga.js',
+        async: true
       },
       {
-        src: '/gtm.js'
+        src: '/gtm.js',
+        async: true
       }
     ]
   },
@@ -89,6 +91,10 @@ export default {
         fallbackLocale: 'en',
         messages: {
           en: {
+            sliderOneAlt: 'DJ playing roots reggae music',
+            sliderTwoAlt: 'Reggae singer in a concert',
+            sliderThreeAlt: 'A reggae jazz band in the streets',
+            sliderFourAlt: 'Breakfast Ital - Yogurt and fruit',
             uvp: {
               first: 'Think Ital',
               second: 'Live Ital',
@@ -96,6 +102,10 @@ export default {
             }
           },
           es: {
+            sliderOneAlt: 'DJ seleccionando música reggae roots',
+            sliderTwoAlt: 'Cantante de reggae en un concierto',
+            sliderThreeAlt: 'Una banda de reggae jazz en las calles',
+            sliderFourAlt: 'Desayuno Ital - Yogurt y fruta en forma de tucán',
             uvp: {
               first: 'Piensas Ital',
               second: 'Vives Ital',
@@ -103,6 +113,10 @@ export default {
             }
           },
           pt: {
+            sliderOneAlt: 'DJ tocando música de roots reggae',
+            sliderTwoAlt: 'Cantor de reggae em show',
+            sliderThreeAlt: 'Uma banda de reggae jazz nas ruas',
+            sliderFourAlt: 'Café da Manhã Ital - Iogurte e frutas',
             uvp: {
               first: 'Pense Ital',
               second: 'Viva Ital',
