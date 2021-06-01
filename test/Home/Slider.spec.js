@@ -35,7 +35,8 @@ describe('Slider', () => {
               }
             ]
           }
-        }
+        },
+        $t: i => i
       }
     })
     expect(wrapper.vm).toBeTruthy()
