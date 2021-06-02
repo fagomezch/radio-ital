@@ -2,19 +2,25 @@
   <header>
     <div class="container flex align-center justify-space-between">
       <Logo />
-      <LanguageSelector />
+      <NavBurger />
+      <NavClose />
+      <NavBar />
     </div>
   </header>
 </template>
 
 <script>
-import LanguageSelector from './LanguageSelector.vue'
+import NavBar from '../Nav/NavBar'
+import NavBurger from '../Nav/Burger'
+import NavClose from '../Nav/Close'
 import Logo from './Logo.vue'
 
 export default {
   components: {
-    LanguageSelector,
-    Logo
+    Logo,
+    NavBar,
+    NavBurger,
+    NavClose
   }
 }
 </script>
@@ -26,8 +32,11 @@ export default {
   }
 
   header {
+    background-color: rgba(3, 5, 26, 0);
+    border-bottom: 1px solid rgba(255, 255, 255, .05);
     position: absolute;
     width: 100%;
+    z-index: 2;
   }
 
   @include desktop {

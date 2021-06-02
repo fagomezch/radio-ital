@@ -17,3 +17,7 @@ export default {
   }
 }
 </script>
+
+<style lang="scss" scoped>
+  .__default { position: relative; }
+</style>

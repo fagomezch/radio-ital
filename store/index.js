@@ -27,3 +27,24 @@ export const state = () => ({
     third: 'uvp.third'
   }
 })
+
+export const actions = {
+  burgerMenuRemove () {
+    const navBar = document.querySelector('.navbar')
+    const navBurger = document.querySelector('.nav__burger')
+    const navClose = document.querySelector('.nav__close')
+    navBar.classList.remove('show')
+    navBurger.classList.remove('hide')
+    navClose.classList.remove('show')
+    document.querySelector('html').classList.remove('overflow-hidden')
+  },
+  burgerMenuToggle () {
+    const navBar = document.querySelector('.navbar')
+    const navBurger = document.querySelector('.nav__burger')
+    const navClose = document.querySelector('.nav__close')
+    navBar.classList.toggle('show')
+    navBurger.classList.toggle('hide')
+    navClose.classList.toggle('show')
+    document.querySelector('html').classList.add('overflow-hidden')
+  }
+}
