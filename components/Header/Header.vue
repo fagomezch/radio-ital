@@ -5,6 +5,7 @@
       <NavBurger />
       <NavClose />
       <NavBar />
+      <Player />
     </div>
   </header>
 </template>
@@ -13,6 +14,7 @@
 import NavBar from '../Nav/NavBar'
 import NavBurger from '../Nav/Burger'
 import NavClose from '../Nav/Close'
+import Player from '../Player/Player'
 import Logo from './Logo.vue'
 
 export default {
@@ -20,7 +22,8 @@ export default {
     Logo,
     NavBar,
     NavBurger,
-    NavClose
+    NavClose,
+    Player
   }
 }
 </script>
