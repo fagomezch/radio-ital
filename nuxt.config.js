@@ -10,7 +10,7 @@ export default {
       { hid: 'og:site_name', name: 'og:site_name', content: 'Radio Ital — Listen to free reggae music radio online 24/7' },
       { hid: 'apple-mobile-web-app-title', name: 'apple-mobile-web-app-title', content: 'Radio Ital — Listen to free reggae music radio online 24/7' },
       { hid: 'og:description', name: 'og:description', content: 'Select your songs from Dub, Ska and Roots Reggae. Breaking news headlines about Reggae music. Enjoy making your own Jamaican Ital food at home.' },
-      { hid: 'og:image', name: 'og:image', content: 'https://raw.githubusercontent.com/fagomezch/api/main/radio-ital/images/banners/banner-radio-ital.jpg' }
+      { hid: 'og:image', name: 'og:image', content: 'https://radioital.s3.us-east-2.amazonaws.com/banners/banner-radio-ital.jpg' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
@@ -91,6 +91,8 @@ export default {
         fallbackLocale: 'en',
         messages: {
           en: {
+            buyTrack: 'Buy Track',
+            currentTrack: 'Current Track',
             sliderOneAlt: 'DJ playing roots reggae music',
             sliderTwoAlt: 'Reggae singer in a concert',
             sliderThreeAlt: 'A reggae jazz band in the streets',
@@ -102,6 +104,8 @@ export default {
             }
           },
           es: {
+            buyTrack: 'Comprar canción',
+            currentTrack: 'Canción actual',
             sliderOneAlt: 'DJ seleccionando música reggae roots',
             sliderTwoAlt: 'Cantante de reggae en un concierto',
             sliderThreeAlt: 'Una banda de reggae jazz en las calles',
@@ -113,6 +117,8 @@ export default {
             }
           },
           pt: {
+            buyTrack: 'Comprar canção',
+            currentTrack: 'Canção atual',
             sliderOneAlt: 'DJ tocando música de roots reggae',
             sliderTwoAlt: 'Cantor de reggae em show',
             sliderThreeAlt: 'Uma banda de reggae jazz nas ruas',
@@ -140,9 +146,9 @@ export default {
     extend (config, { loaders }) {
       loaders.scss.additionalData = '@use "sass:math";'
     },
-    publicPath: '/assets/'
+    publicPath: '/app/'
   },
   globals: {
-    id: '__radioItal'
+    id: 'radioItal'
   }
 }

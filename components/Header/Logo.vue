@@ -9,23 +9,25 @@
 .logo {
   position: relative;
   z-index: 1;
-
   &:after {
     background-image: url('@/assets/images/on-air.gif');
     background-size: contain;
     bottom: 80%;
     content: '';
     height: rem(16);
-    left: 104%;
+    right: 63%;
     position: absolute;
     width: rem(64);
   }
-
   &__image--small { display: none; }
 }
-
 @include desktop {
   .logo {
+    justify-self: flex-start;
+    &::after {
+      left: 0;
+      right: unset;
+    }
     &:hover {
       &:after,
       .logo__image,
@@ -34,7 +36,6 @@
         transition: opacity 0.3s ease-in-out;
       }
     }
-
     &__image {
       opacity: 1;
       transition: opacity 0.3s ease-in-out;

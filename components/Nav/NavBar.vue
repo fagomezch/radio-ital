@@ -80,8 +80,10 @@ export default {
       height: auto;
       justify-content: flex-end;
       left: 0;
+      margin-right: 0;
       opacity: 1;
       position: relative;
+      width: 65%;
 
       &__item {
         position: relative;

@@ -1,5 +1,5 @@
 <template>
-  <div class="__default">
+  <div class="default">
     <Header />
     <Slider />
     <Nuxt />
@@ -19,5 +19,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  .__default { position: relative; }
+  .default { position: relative; }
 </style>

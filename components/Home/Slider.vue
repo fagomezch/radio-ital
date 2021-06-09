@@ -21,27 +21,20 @@ export default {
   },
   mounted () {
     this.showSlides(this.slideIndex)
-
-    setInterval(() => {
-      this.plusSlides(1)
-    }, 5000)
+    setInterval(() => { this.plusSlides(1) }, 5000)
   },
   methods: {
     plusSlides (n) {
       this.showSlides(this.slideIndex += n)
     },
-
     showSlides (n) {
       let i
       const slides = document.getElementsByClassName('slider__item')
-
       if (n > slides.length) { this.slideIndex = 1 }
       if (n < 1) { this.slideIndex = slides.length }
-
       for (i = 0; i < slides.length; i += 1) {
         slides[i].style.display = 'none'
       }
-
       if (slides[this.slideIndex - 1]) {
         slides[this.slideIndex - 1].style.display = 'block'
       }

@@ -21,6 +21,7 @@ export default ({
 </script>
 <style lang="scss" scoped>
   .nav__burger {
+    cursor: pointer;
     position: relative;
     z-index: 1;
 

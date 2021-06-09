@@ -1,7 +1,6 @@
 <template>
   <svg class="svg-icon" viewBox="0 0 20 20">
     <path
-      fill="none"
       d="
         M11.469
         10l7.08-7.08c0.406-0.406

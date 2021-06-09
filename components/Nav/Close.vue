@@ -21,6 +21,7 @@ export default ({
 </script>
 <style lang="scss" scoped>
   .nav__close {
+    cursor: pointer;
     display: none;
     position: relative;
     z-index: 100;
